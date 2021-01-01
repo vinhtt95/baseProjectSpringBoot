@@ -3,8 +3,6 @@ package com.vinhtt.baseProject.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vinhtt.baseProject.config.CommonProperties;
 import com.vinhtt.baseProject.entity.ApiResponse;
-import com.vinhtt.baseProject.model.Card;
-import com.vinhtt.baseProject.repository.CardRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
@@ -16,21 +14,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/card")
-public class CardController {
+@RequestMapping("/video")
+public class VideoController {
     @Autowired
     private CommonProperties commonProperties;
 
-    @Autowired
-    private CardRepository cardRepository;
-
-    @GetMapping(path = "getAll")
-    public Object getAllCard(){
-        Resource resource = new ClassPathResource("/static/getAllCard.json");
+    @GetMapping(path = "/getByCardId")
+    public Object getByCardId(@RequestParam("id") int id){
+        Resource resource = new ClassPathResource("/static/getByCardId.json");
         Object result= new Object();
         try {
             ObjectMapper mapper = new ObjectMapper();
