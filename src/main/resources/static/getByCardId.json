@@ -1,1 +1,271 @@
-{"status":1,"code":200,"message":"","data":[{"id":1,"cardId":1,"subId":-1,"title":"0. Course Overview","url":"https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4","sub":"Flutter- Getting Started\\0. Course Overview\\0. Course Overview.srt"},{"id":2,"cardId":1,"subId":-1,"title":"1. Why Flutter-","url":"Flutter- Getting Started\\1. Hello Flutter\\1. Why Flutter-.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\1. Why Flutter-.srt"},{"id":3,"cardId":1,"subId":-1,"title":"5. Organizing Your Flutter Code","url":"Flutter- Getting Started\\1. Hello Flutter\\5. Organizing Your Flutter Code.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\5. Organizing Your Flutter Code.srt"},{"id":4,"cardId":1,"subId":-1,"title":"4. Designing UIs with Dart","url":"Flutter- Getting Started\\1. Hello Flutter\\4. Designing UIs with Dart.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\4. Designing UIs with Dart.srt"},{"id":5,"cardId":1,"subId":-1,"title":"2. Installing Flutter","url":"Flutter- Getting Started\\1. Hello Flutter\\2. Installing Flutter.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\2. Installing Flutter.srt"},{"id":6,"cardId":1,"subId":-1,"title":"6. Adding Your Logic","url":"Flutter- Getting Started\\1. Hello Flutter\\6. Adding Your Logic.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\6. Adding Your Logic.srt"},{"id":7,"cardId":1,"subId":-1,"title":"0. Welcome","url":"Flutter- Getting Started\\1. Hello Flutter\\0. Welcome.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\0. Welcome.srt"},{"id":8,"cardId":1,"subId":-1,"title":"3. Hello World!","url":"Flutter- Getting Started\\1. Hello Flutter\\3. Hello World!.mp4","sub":"Flutter- Getting Started\\1. Hello Flutter\\3. Hello World!.srt"},{"id":9,"cardId":1,"subId":-1,"title":"2. Adding Style to Text","url":"Flutter- Getting Started\\2. Designing the UI with Widgets\\2. Adding Style to Text.mp4","sub":"Flutter- Getting Started\\2. Designing the UI with Widgets\\2. Adding Style to Text.srt"},{"id":10,"cardId":1,"subId":-1,"title":"0. Introducing Basic Widgets","url":"Flutter- Getting Started\\2. Designing the UI with Widgets\\0. Introducing Basic Widgets.mp4","sub":"Flutter- Getting Started\\2. Designing the UI with Widgets\\0. Introducing Basic Widgets.srt"},{"id":11,"cardId":1,"subId":-1,"title":"3. Screen Space with Rows and Columns","url":"Flutter- Getting Started\\2. Designing the UI with Widgets\\3. Screen Space with Rows and Columns.mp4","sub":"Flutter- Getting Started\\2. Designing the UI with Widgets\\3. Screen Space with Rows and Columns.srt"},{"id":12,"cardId":1,"subId":-1,"title":"1. Using Containers","url":"Flutter- Getting Started\\2. Designing the UI with Widgets\\1. Using Containers.mp4","sub":"Flutter- Getting Started\\2. Designing the UI with Widgets\\1. Using Containers.srt"},{"id":13,"cardId":1,"subId":-1,"title":"4. Adding Images from Assets","url":"Flutter- Getting Started\\2. Designing the UI with Widgets\\4. Adding Images from Assets.mp4","sub":"Flutter- Getting Started\\2. Designing the UI with Widgets\\4. Adding Images from Assets.srt"},{"id":14,"cardId":1,"subId":-1,"title":"5. Giving Feedback- RaisedButton and AlertDialog","url":"Flutter- Getting Started\\2. Designing the UI with Widgets\\5. Giving Feedback- RaisedButton and AlertDialog.mp4","sub":"Flutter- Getting Started\\2. Designing the UI with Widgets\\5. Giving Feedback- RaisedButton and AlertDialog.srt"},{"id":15,"cardId":1,"subId":-1,"title":"3. Demo- Using a DropDownButton and DropDownItems","url":"","sub":"Flutter- Getting Started\\3. Adding Interactivity\\3. Demo- Using a DropDownButton and DropDownItems.srt"},{"id":16,"cardId":1,"subId":-1,"title":"5. Demo- Fuel Cost Calculator (Part 2)","url":"Flutter- Getting Started\\3. Adding Interactivity\\5. Demo- Fuel Cost Calculator (Part 2).mp4","sub":"Flutter- Getting Started\\3. Adding Interactivity\\5. Demo- Fuel Cost Calculator (Part 2).srt"},{"id":17,"cardId":1,"subId":-1,"title":"0. Introducing Stateful Widgets","url":"Flutter- Getting Started\\3. Adding Interactivity\\0. Introducing Stateful Widgets.mp4","sub":"Flutter- Getting Started\\3. Adding Interactivity\\0. Introducing Stateful Widgets.srt"},{"id":18,"cardId":1,"subId":-1,"title":"1. Using State in Flutter","url":"","sub":"Flutter- Getting Started\\3. Adding Interactivity\\1. Using State in Flutter.srt"},{"id":19,"cardId":1,"subId":-1,"title":"4. Demo- Fuel Cost Calculator (Part 1)","url":"Flutter- Getting Started\\3. Adding Interactivity\\4. Demo- Fuel Cost Calculator (Part 1).mp4","sub":"Flutter- Getting Started\\3. Adding Interactivity\\4. Demo- Fuel Cost Calculator (Part 1).srt"},{"id":20,"cardId":1,"subId":-1,"title":"2. Demo- Hello You!","url":"Flutter- Getting Started\\3. Adding Interactivity\\2. Demo- Hello You!.mp4","sub":"Flutter- Getting Started\\3. Adding Interactivity\\2. Demo- Hello You!.srt"},{"id":21,"cardId":1,"subId":-1,"title":"8. Module Summary _ Takeaways","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\8. Module Summary _ Takeaways.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\8. Module Summary _ Takeaways.srt"},{"id":22,"cardId":1,"subId":-1,"title":"2. Using a Singleton","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\2. Using a Singleton.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\2. Using a Singleton.srt"},{"id":23,"cardId":1,"subId":-1,"title":"5. Building a Detail View","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\5. Building a Detail View.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\5. Building a Detail View.srt"},{"id":24,"cardId":1,"subId":-1,"title":"4. Building a ListView","url":"","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\4. Building a ListView.srt"},{"id":25,"cardId":1,"subId":-1,"title":"7. Demo- Completing the App","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\7. Demo- Completing the App.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\7. Demo- Completing the App.srt"},{"id":26,"cardId":1,"subId":-1,"title":"6. Navigation in Flutter","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\6. Navigation in Flutter.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\6. Navigation in Flutter.srt"},{"id":27,"cardId":1,"subId":-1,"title":"3. Developing a Database Helper Class","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\3. Developing a Database Helper Class.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\3. Developing a Database Helper Class.srt"},{"id":28,"cardId":1,"subId":-1,"title":"1. Creating a Model Class","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\1. Creating a Model Class.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\1. Creating a Model Class.srt"},{"id":29,"cardId":1,"subId":-1,"title":"0. Data _ SQFLite in Flutter","url":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\0. Data _ SQFLite in Flutter.mp4","sub":"Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\0. Data _ SQFLite in Flutter.srt"},{"id":30,"cardId":1,"subId":6,"title":"0. Intro","url":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\0. Intro.mp4","sub":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\0. Intro.srt"},{"id":31,"cardId":1,"subId":6,"title":"2. Using Animations","url":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\2. Using Animations.mp4","sub":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\2. Using Animations.srt"},{"id":32,"cardId":1,"subId":6,"title":"3. Summary and Takeaways","url":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\3. Summary and Takeaways.mp4","sub":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\3. Summary and Takeaways.srt"},{"id":33,"cardId":1,"subId":6,"title":"1. Using Gestures","url":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\1. Using Gestures.mp4","sub":"Flutter- Getting Started\\5. Introducing Gestures and Animations\\1. Using Gestures.srt"}]}
+{
+  "status": 1,
+  "code": 200,
+  "message": "",
+  "data": [
+    {
+      "id": 1,
+      "cardId": 1,
+      "subId": -1,
+      "title": "0. Course Overview",
+      "url": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
+      "sub": "Flutter- Getting Started\\0. Course Overview\\0. Course Overview.srt"
+    },
+    {
+      "id": 2,
+      "cardId": 1,
+      "subId": -1,
+      "title": "1. Why Flutter-",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\1. Why Flutter-.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\1. Why Flutter-.srt"
+    },
+    {
+      "id": 3,
+      "cardId": 1,
+      "subId": -1,
+      "title": "5. Organizing Your Flutter Code",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\5. Organizing Your Flutter Code.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\5. Organizing Your Flutter Code.srt"
+    },
+    {
+      "id": 4,
+      "cardId": 1,
+      "subId": -1,
+      "title": "4. Designing UIs with Dart",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\4. Designing UIs with Dart.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\4. Designing UIs with Dart.srt"
+    },
+    {
+      "id": 5,
+      "cardId": 1,
+      "subId": -1,
+      "title": "2. Installing Flutter",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\2. Installing Flutter.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\2. Installing Flutter.srt"
+    },
+    {
+      "id": 6,
+      "cardId": 1,
+      "subId": -1,
+      "title": "6. Adding Your Logic",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\6. Adding Your Logic.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\6. Adding Your Logic.srt"
+    },
+    {
+      "id": 7,
+      "cardId": 1,
+      "subId": -1,
+      "title": "0. Welcome",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\0. Welcome.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\0. Welcome.srt"
+    },
+    {
+      "id": 8,
+      "cardId": 1,
+      "subId": -1,
+      "title": "3. Hello World!",
+      "url": "Flutter- Getting Started\\1. Hello Flutter\\3. Hello World!.mp4",
+      "sub": "Flutter- Getting Started\\1. Hello Flutter\\3. Hello World!.srt"
+    },
+    {
+      "id": 9,
+      "cardId": 1,
+      "subId": -1,
+      "title": "2. Adding Style to Text",
+      "url": "Flutter- Getting Started\\2. Designing the UI with Widgets\\2. Adding Style to Text.mp4",
+      "sub": "Flutter- Getting Started\\2. Designing the UI with Widgets\\2. Adding Style to Text.srt"
+    },
+    {
+      "id": 10,
+      "cardId": 1,
+      "subId": -1,
+      "title": "0. Introducing Basic Widgets",
+      "url": "Flutter- Getting Started\\2. Designing the UI with Widgets\\0. Introducing Basic Widgets.mp4",
+      "sub": "Flutter- Getting Started\\2. Designing the UI with Widgets\\0. Introducing Basic Widgets.srt"
+    },
+    {
+      "id": 11,
+      "cardId": 1,
+      "subId": -1,
+      "title": "3. Screen Space with Rows and Columns",
+      "url": "Flutter- Getting Started\\2. Designing the UI with Widgets\\3. Screen Space with Rows and Columns.mp4",
+      "sub": "Flutter- Getting Started\\2. Designing the UI with Widgets\\3. Screen Space with Rows and Columns.srt"
+    },
+    {
+      "id": 12,
+      "cardId": 1,
+      "subId": -1,
+      "title": "1. Using Containers",
+      "url": "Flutter- Getting Started\\2. Designing the UI with Widgets\\1. Using Containers.mp4",
+      "sub": "Flutter- Getting Started\\2. Designing the UI with Widgets\\1. Using Containers.srt"
+    },
+    {
+      "id": 13,
+      "cardId": 1,
+      "subId": -1,
+      "title": "4. Adding Images from Assets",
+      "url": "Flutter- Getting Started\\2. Designing the UI with Widgets\\4. Adding Images from Assets.mp4",
+      "sub": "Flutter- Getting Started\\2. Designing the UI with Widgets\\4. Adding Images from Assets.srt"
+    },
+    {
+      "id": 14,
+      "cardId": 1,
+      "subId": -1,
+      "title": "5. Giving Feedback- RaisedButton and AlertDialog",
+      "url": "Flutter- Getting Started\\2. Designing the UI with Widgets\\5. Giving Feedback- RaisedButton and AlertDialog.mp4",
+      "sub": "Flutter- Getting Started\\2. Designing the UI with Widgets\\5. Giving Feedback- RaisedButton and AlertDialog.srt"
+    },
+    {
+      "id": 15,
+      "cardId": 1,
+      "subId": -1,
+      "title": "3. Demo- Using a DropDownButton and DropDownItems",
+      "url": "",
+      "sub": "Flutter- Getting Started\\3. Adding Interactivity\\3. Demo- Using a DropDownButton and DropDownItems.srt"
+    },
+    {
+      "id": 16,
+      "cardId": 1,
+      "subId": -1,
+      "title": "5. Demo- Fuel Cost Calculator (Part 2)",
+      "url": "Flutter- Getting Started\\3. Adding Interactivity\\5. Demo- Fuel Cost Calculator (Part 2).mp4",
+      "sub": "Flutter- Getting Started\\3. Adding Interactivity\\5. Demo- Fuel Cost Calculator (Part 2).srt"
+    },
+    {
+      "id": 17,
+      "cardId": 1,
+      "subId": -1,
+      "title": "0. Introducing Stateful Widgets",
+      "url": "Flutter- Getting Started\\3. Adding Interactivity\\0. Introducing Stateful Widgets.mp4",
+      "sub": "Flutter- Getting Started\\3. Adding Interactivity\\0. Introducing Stateful Widgets.srt"
+    },
+    {
+      "id": 18,
+      "cardId": 1,
+      "subId": -1,
+      "title": "1. Using State in Flutter",
+      "url": "",
+      "sub": "Flutter- Getting Started\\3. Adding Interactivity\\1. Using State in Flutter.srt"
+    },
+    {
+      "id": 19,
+      "cardId": 1,
+      "subId": -1,
+      "title": "4. Demo- Fuel Cost Calculator (Part 1)",
+      "url": "Flutter- Getting Started\\3. Adding Interactivity\\4. Demo- Fuel Cost Calculator (Part 1).mp4",
+      "sub": "Flutter- Getting Started\\3. Adding Interactivity\\4. Demo- Fuel Cost Calculator (Part 1).srt"
+    },
+    {
+      "id": 20,
+      "cardId": 1,
+      "subId": -1,
+      "title": "2. Demo- Hello You!",
+      "url": "Flutter- Getting Started\\3. Adding Interactivity\\2. Demo- Hello You!.mp4",
+      "sub": "Flutter- Getting Started\\3. Adding Interactivity\\2. Demo- Hello You!.srt"
+    },
+    {
+      "id": 21,
+      "cardId": 1,
+      "subId": -1,
+      "title": "8. Module Summary _ Takeaways",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\8. Module Summary _ Takeaways.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\8. Module Summary _ Takeaways.srt"
+    },
+    {
+      "id": 22,
+      "cardId": 1,
+      "subId": -1,
+      "title": "2. Using a Singleton",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\2. Using a Singleton.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\2. Using a Singleton.srt"
+    },
+    {
+      "id": 23,
+      "cardId": 1,
+      "subId": -1,
+      "title": "5. Building a Detail View",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\5. Building a Detail View.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\5. Building a Detail View.srt"
+    },
+    {
+      "id": 24,
+      "cardId": 1,
+      "subId": -1,
+      "title": "4. Building a ListView",
+      "url": "",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\4. Building a ListView.srt"
+    },
+    {
+      "id": 25,
+      "cardId": 1,
+      "subId": -1,
+      "title": "7. Demo- Completing the App",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\7. Demo- Completing the App.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\7. Demo- Completing the App.srt"
+    },
+    {
+      "id": 26,
+      "cardId": 1,
+      "subId": -1,
+      "title": "6. Navigation in Flutter",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\6. Navigation in Flutter.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\6. Navigation in Flutter.srt"
+    },
+    {
+      "id": 27,
+      "cardId": 1,
+      "subId": -1,
+      "title": "3. Developing a Database Helper Class",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\3. Developing a Database Helper Class.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\3. Developing a Database Helper Class.srt"
+    },
+    {
+      "id": 28,
+      "cardId": 1,
+      "subId": -1,
+      "title": "1. Creating a Model Class",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\1. Creating a Model Class.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\1. Creating a Model Class.srt"
+    },
+    {
+      "id": 29,
+      "cardId": 1,
+      "subId": -1,
+      "title": "0. Data _ SQFLite in Flutter",
+      "url": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\0. Data _ SQFLite in Flutter.mp4",
+      "sub": "Flutter- Getting Started\\4. Navigating an App and Dealing with Data\\0. Data _ SQFLite in Flutter.srt"
+    },
+    {
+      "id": 30,
+      "cardId": 1,
+      "subId": 6,
+      "title": "0. Intro",
+      "url": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\0. Intro.mp4",
+      "sub": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\0. Intro.srt"
+    },
+    {
+      "id": 31,
+      "cardId": 1,
+      "subId": 6,
+      "title": "2. Using Animations",
+      "url": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\2. Using Animations.mp4",
+      "sub": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\2. Using Animations.srt"
+    },
+    {
+      "id": 32,
+      "cardId": 1,
+      "subId": 6,
+      "title": "3. Summary and Takeaways",
+      "url": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\3. Summary and Takeaways.mp4",
+      "sub": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\3. Summary and Takeaways.srt"
+    },
+    {
+      "id": 33,
+      "cardId": 1,
+      "subId": 6,
+      "title": "1. Using Gestures",
+      "url": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\1. Using Gestures.mp4",
+      "sub": "Flutter- Getting Started\\5. Introducing Gestures and Animations\\1. Using Gestures.srt"
+    }
+  ]
+}
