@@ -38,7 +38,7 @@ public class FileController {
     @PostMapping(path = "/fromPath")
     public ResponseEntity<?> getFileFromPath(@Valid @RequestBody MyFile myFile){
 //        File dir = new File(myFile.getPath());
-        getChild(myFile);
+        getChild(myFileRepository.save(new MyFile(myFile.getName(), myFile.getPath(), myFile.isFile(), myFile.getId())));
         return ResponseEntity.ok().body(
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
                         .message(commonProperties.getMESSAGE_SUCCESS())
@@ -63,7 +63,7 @@ public class FileController {
                 }
             }
         }else{
-            System.out.println("File: "+ myFileRepository.save(new MyFile(myFile.getName(), myFile.getPath(), myFile.isFile(), myFile.getId())).getPath());
+            System.out.println("File: "+ myFile.getPath());
         }
     }
 }
