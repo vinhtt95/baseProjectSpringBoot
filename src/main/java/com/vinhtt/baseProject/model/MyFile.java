@@ -20,6 +20,8 @@ public class MyFile {
 
     private String name;
     private String path;
+    private long folderId;
+
     private boolean isFile;
 
     public MyFile(String name, String path, boolean isFile) {
