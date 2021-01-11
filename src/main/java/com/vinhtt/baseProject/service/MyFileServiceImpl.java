@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
+import java.util.ArrayList;
 
 @Service
 @AllArgsConstructor
@@ -37,6 +38,7 @@ public class MyFileServiceImpl implements MyFileService {
         if (dir.isDirectory()) {
             System.out.println("Folder: "+ myFile.getPath());
             if(dir.listFiles() != null) {
+                checkDeleted(dir, myFile);
                 for (File listFile : dir.listFiles()) {
                     if(myFileRepository.existsByPath(listFile.getPath())){
                         System.out.println("Folder exists: "+ listFile.getPath());
@@ -49,6 +51,26 @@ public class MyFileServiceImpl implements MyFileService {
             }
         }else{
             System.out.println("File: "+ myFile.getPath());
+        }
+    }
+
+    private void checkDeleted(File dir, MyFile myFile){
+        File[] files = dir.listFiles();
+        ArrayList<MyFile> listMyFileChild = myFileRepository.findByFolderId(myFile.getId());
+
+        boolean isDelete;
+        for (MyFile file : listMyFileChild) {
+            isDelete = true;
+
+            for (File dirFile: files){
+                if (file.getPath().equals(dirFile.getPath())){
+                    isDelete = false;
+                    break;
+                }
+            }
+            if(isDelete){
+                System.out.println("Deleted: "+ file.getPath());
+            }
         }
     }
 }
