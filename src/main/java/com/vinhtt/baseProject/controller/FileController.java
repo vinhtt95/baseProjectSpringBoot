@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.io.File;
 import java.util.List;
 
@@ -24,9 +25,19 @@ public class FileController {
     @Autowired
     private MyFileRepository myFileRepository;
 
-    @GetMapping(path = "/formDisc")
+    @GetMapping(path = "/fromDisc")
     public ResponseEntity<?> getFileFromDisc(@RequestParam("disc") String disc){
         File dir = new File(disc+":\\");
+        getChild(dir);
+        return ResponseEntity.ok().body(
+                ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
+                        .message(commonProperties.getMESSAGE_SUCCESS())
+                        .data(dir).build());
+    }
+
+    @PostMapping(path = "fromPath")
+    public ResponseEntity<?> getFileFromPath(@Valid @RequestBody MyFile myFile){
+        File dir = new File(myFile.getPath());
         getChild(dir);
         return ResponseEntity.ok().body(
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
