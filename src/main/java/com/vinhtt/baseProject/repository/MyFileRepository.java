@@ -1,12 +1,12 @@
 package com.vinhtt.baseProject.repository;
 
-import com.vinhtt.baseProject.model.File;
+import com.vinhtt.baseProject.model.MyFile;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface FileRepository extends JpaRepository<File, Long> {
-    List<File> findAllByParentId(long id);
+public interface MyFileRepository extends JpaRepository<MyFile, Long> {
+    List<MyFile> findAllByParentId(long id);
 }

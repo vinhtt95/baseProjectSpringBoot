@@ -2,9 +2,7 @@ package com.vinhtt.baseProject;
 
 import com.vinhtt.baseProject.config.CommonProperties;
 import com.vinhtt.baseProject.model.Card;
-import com.vinhtt.baseProject.model.File;
 import com.vinhtt.baseProject.repository.CardRepository;
-import com.vinhtt.baseProject.repository.FileRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -32,8 +30,8 @@ public class BaseProjectApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(BaseProjectApplication.class, args);
 //		FileRepository fileRepository = context.getBean(FileRepository.class);
-//		CardRepository cardRepository = context.getBean(CardRepository.class);
-//		cardRepository.save(new Card("Flutter- Getting Started", "Make by Jackie"));
+		CardRepository cardRepository = context.getBean(CardRepository.class);
+		cardRepository.save(new Card("Flutter- Getting Started", "Make by Jackie"));
 	}
 
 }
