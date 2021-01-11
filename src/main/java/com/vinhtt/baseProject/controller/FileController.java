@@ -25,8 +25,8 @@ public class FileController {
     private MyFileRepository myFileRepository;
 
     @GetMapping(path = "/formPath")
-    public ResponseEntity<?> getFileFromPath(@RequestParam("path") String path){
-        File dir = new File(path);
+    public ResponseEntity<?> getFileFromDisc(@RequestParam("disc") String disc){
+        File dir = new File(disc+":\\");
         for(File file: dir.listFiles()){
             if(file.isFile()){
                 MyFile myFile = new MyFile(file);
