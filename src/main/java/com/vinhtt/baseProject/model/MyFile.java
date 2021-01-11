@@ -9,7 +9,7 @@ import java.io.File;
 
 @Data
 @Entity
-@Table(name = "files")
+@Table(name = "myfiles")
 @AllArgsConstructor
 @NoArgsConstructor
 public class MyFile {
