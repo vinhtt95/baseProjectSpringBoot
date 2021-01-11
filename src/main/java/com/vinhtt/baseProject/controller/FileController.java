@@ -24,18 +24,24 @@ public class FileController {
     @Autowired
     private MyFileRepository myFileRepository;
 
-    @GetMapping(path = "/formPath")
+    @GetMapping(path = "/formDisc")
     public ResponseEntity<?> getFileFromDisc(@RequestParam("disc") String disc){
         File dir = new File(disc+":\\");
-        for(File file: dir.listFiles()){
-            if(file.isFile()){
-                MyFile myFile = new MyFile(file);
-                System.out.println(myFile.toString());
-            }
-        }
+        getChild(dir);
         return ResponseEntity.ok().body(
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
                         .message(commonProperties.getMESSAGE_SUCCESS())
                         .data(dir).build());
+    }
+
+    private void getChild(File dir){
+        for(File file: dir.listFiles()) {
+            if (file.isFile()) {
+                MyFile myFile = new MyFile(file);
+                System.out.println(myFile.toString());
+            } else {
+                getChild(file);
+            }
+        }
     }
 }
