@@ -5,29 +5,33 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.File;
 
 @Data
 @Entity
 @Table(name = "files")
 @AllArgsConstructor
 @NoArgsConstructor
-public class File {
+public class MyFile {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
 
-    private long parentId;
     private String name;
-    private String address;
-    private String addressSub;
+    private String path;
     private boolean isFile;
 
-    public File(long parentId, String name, String address, String addressSub, boolean isFile) {
-        this.parentId = parentId;
+    public MyFile(String name, String path, boolean isFile) {
         this.name = name;
-        this.address = address;
-        this.addressSub = addressSub;
+        this.path = path;
         this.isFile = isFile;
     }
+
+    public MyFile(File file){
+        this.name = file.getName();
+        this.path = file.getPath();
+        this.isFile = file.isFile();
+    }
+
 }
