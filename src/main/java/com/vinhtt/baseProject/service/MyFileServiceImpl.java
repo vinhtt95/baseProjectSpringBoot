@@ -19,7 +19,13 @@ public class MyFileServiceImpl implements MyFileService {
     private MyFileRepository myFileRepository;
 
     public ResponseEntity<?> getFileFromPath(MyFile myFile) throws Exception{
-        getChild(myFileRepository.save(new MyFile(myFile.getName(), myFile.getPath(), myFile.isFile(), myFile.getId())));
+        if(myFileRepository.existsByPath(myFile.getPath())){
+            System.out.println("Folder exists: "+ myFile.getPath());
+            getChild(myFileRepository.findByPath(myFile.getPath()));
+        }else {
+            System.out.println("Folder new: "+ myFile.getPath());
+            getChild(myFileRepository.save(new MyFile(myFile.getName(), myFile.getPath(), myFile.isFile(), myFile.getId())));
+        }
         return ResponseEntity.ok().body(
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
                         .message(commonProperties.getMESSAGE_SUCCESS())
