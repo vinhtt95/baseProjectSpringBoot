@@ -1,11 +1,10 @@
-package service;
+package com.vinhtt.baseProject.service;
 
 import com.vinhtt.baseProject.config.CommonProperties;
 import com.vinhtt.baseProject.entity.ApiResponse;
 import com.vinhtt.baseProject.model.MyFile;
 import com.vinhtt.baseProject.repository.MyFileRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -13,12 +12,10 @@ import java.io.File;
 
 @Service
 @AllArgsConstructor
-public class MyFileService {
+public class MyFileServiceImpl implements MyFileService {
 
-    @Autowired
     private CommonProperties commonProperties;
 
-    @Autowired
     private MyFileRepository myFileRepository;
 
     public ResponseEntity<?> getFileFromPath(MyFile myFile) throws Exception{
