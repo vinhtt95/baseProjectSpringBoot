@@ -25,24 +25,24 @@ public class FileController {
     @Autowired
     private MyFileRepository myFileRepository;
 
-    @GetMapping(path = "/fromDisc")
-    public ResponseEntity<?> getFileFromDisc(@RequestParam("disc") String disc){
-        File dir = new File(disc+":\\");
-        getChild(dir);
-        return ResponseEntity.ok().body(
-                ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
-                        .message(commonProperties.getMESSAGE_SUCCESS())
-                        .data(dir).build());
-    }
+//    @GetMapping(path = "/fromDisc")
+//    public ResponseEntity<?> getFileFromDisc(@RequestParam("disc") String disc){
+//        File dir = new File(disc+":\\");
+//        getChild(dir);
+//        return ResponseEntity.ok().body(
+//                ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
+//                        .message(commonProperties.getMESSAGE_SUCCESS())
+//                        .data(dir).build());
+//    }
 
     @PostMapping(path = "/fromPath")
     public ResponseEntity<?> getFileFromPath(@Valid @RequestBody MyFile myFile){
-        File dir = new File(myFile.getPath());
-        getChild(dir);
+//        File dir = new File(myFile.getPath());
+        getChild(myFile);
         return ResponseEntity.ok().body(
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
                         .message(commonProperties.getMESSAGE_SUCCESS())
-                        .data(dir).build());
+                        .data(myFileRepository.findAll()).build());
     }
 
     @GetMapping()
@@ -53,17 +53,17 @@ public class FileController {
                         .data(myFileRepository.findAll()).build());
     }
 
-    public void getChild(File dir) {
+    public void getChild(MyFile myFile) {
+        File dir = new File(myFile.getPath());
         if (dir.isDirectory()) {
             System.out.println("Folder: "+ dir.getPath());
             if(dir.listFiles() != null) {
                 for (File listFile : dir.listFiles()) {
-                    getChild(listFile);
+                    getChild(myFileRepository.save(new MyFile(listFile.getName(), listFile.getPath(), listFile.isFile(), myFile.getId())));
                 }
             }
         }else{
-            myFileRepository.save(new MyFile(dir.getName(), dir.getPath(), dir.isFile()));
-            System.out.println("File: "+ dir.getPath());
+            System.out.println("File: "+ myFileRepository.save(new MyFile(myFile.getName(), myFile.getPath(), myFile.isFile(), myFile.getId())).getPath());
         }
     }
 }

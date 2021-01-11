@@ -21,13 +21,13 @@ public class MyFile {
     private String name;
     private String path;
     private long folderId;
-
     private boolean isFile;
 
-    public MyFile(String name, String path, boolean isFile) {
+    public MyFile(String name, String path, boolean isFile, long folderId) {
         this.name = name;
         this.path = path;
         this.isFile = isFile;
+        this.folderId= folderId;
     }
 
     public MyFile(File file){
