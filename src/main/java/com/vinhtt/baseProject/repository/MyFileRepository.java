@@ -8,5 +8,4 @@ import java.util.List;
 
 @Repository
 public interface MyFileRepository extends JpaRepository<MyFile, Long> {
-    List<MyFile> findAllByParentId(long id);
 }
