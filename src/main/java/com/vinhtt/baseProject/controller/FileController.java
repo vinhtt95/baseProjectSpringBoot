@@ -35,7 +35,7 @@ public class FileController {
                         .data(dir).build());
     }
 
-    @PostMapping(path = "fromPath")
+    @PostMapping(path = "/fromPath")
     public ResponseEntity<?> getFileFromPath(@Valid @RequestBody MyFile myFile){
         File dir = new File(myFile.getPath());
         getChild(dir);
@@ -45,8 +45,15 @@ public class FileController {
                         .data(dir).build());
     }
 
-    public static void getChild(File dir) {
+    @GetMapping()
+    public ResponseEntity<?> getAllFiles(){
+        return ResponseEntity.ok().body(
+                ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
+                        .message(commonProperties.getMESSAGE_SUCCESS())
+                        .data(myFileRepository.findAll()).build());
+    }
 
+    public void getChild(File dir) {
         if (dir.isDirectory()) {
             System.out.println("Folder: "+ dir.getPath());
             if(dir.listFiles() != null) {
@@ -55,6 +62,7 @@ public class FileController {
                 }
             }
         }else{
+            myFileRepository.save(new MyFile(dir.getName(), dir.getPath(), dir.isFile()));
             System.out.println("File: "+ dir.getPath());
         }
     }
