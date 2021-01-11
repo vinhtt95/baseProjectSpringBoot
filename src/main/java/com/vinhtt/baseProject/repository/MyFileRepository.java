@@ -8,4 +8,6 @@ import java.util.List;
 
 @Repository
 public interface MyFileRepository extends JpaRepository<MyFile, Long> {
+    boolean existsByPath(String path);
+    MyFile findByPath(String path);
 }

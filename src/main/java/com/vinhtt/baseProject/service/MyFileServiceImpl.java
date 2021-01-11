@@ -29,10 +29,16 @@ public class MyFileServiceImpl implements MyFileService {
     private void getChild(MyFile myFile) {
         File dir = new File(myFile.getPath());
         if (dir.isDirectory()) {
-            System.out.println("Folder: "+ dir.getPath());
+            System.out.println("Folder: "+ myFile.getPath());
             if(dir.listFiles() != null) {
                 for (File listFile : dir.listFiles()) {
-                    getChild(myFileRepository.save(new MyFile(listFile.getName(), listFile.getPath(), listFile.isFile(), myFile.getId())));
+                    if(myFileRepository.existsByPath(listFile.getPath())){
+                        System.out.println("Folder exists: "+ listFile.getPath());
+                        getChild(myFileRepository.findByPath(listFile.getPath()));
+                    }else {
+                        System.out.println("Folder new: "+ listFile.getPath());
+                        getChild(myFileRepository.save(new MyFile(listFile.getName(), listFile.getPath(), listFile.isFile(), myFile.getId())));
+                    }
                 }
             }
         }else{
