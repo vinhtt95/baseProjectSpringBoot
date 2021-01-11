@@ -30,7 +30,7 @@ public class MyFileServiceImpl implements MyFileService {
         return ResponseEntity.ok().body(
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
                         .message(commonProperties.getMESSAGE_SUCCESS())
-                        .data(myFileRepository.findAll()).build());
+                        .data(myFileRepository.findAllByDeleteIsFalse()).build());
     }
 
     private void getChild(MyFile myFile) {

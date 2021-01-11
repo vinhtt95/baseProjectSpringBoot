@@ -14,4 +14,6 @@ public interface MyFileRepository extends JpaRepository<MyFile, Long> {
     MyFile findByPath(String path);
 
     ArrayList<MyFile> findByFolderId(long id);
+
+    ArrayList<MyFile> findAllByDeleteIsFalse();
 }
