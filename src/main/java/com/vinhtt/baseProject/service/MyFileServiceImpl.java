@@ -69,8 +69,22 @@ public class MyFileServiceImpl implements MyFileService {
                 }
             }
             if(isDelete){
+                deletedFile(file);
                 System.out.println("Deleted: "+ file.getPath());
             }
+        }
+    }
+
+    private void deletedFile(MyFile myFile) {
+        if(myFile.isFile()){
+            myFile.setDelete(true);
+            myFileRepository.save(myFile);
+        }else{
+            for (MyFile file: myFileRepository.findByFolderId(myFile.getId())) {
+                deletedFile(file);
+            }
+            myFile.setDelete(true);
+            myFileRepository.save(myFile);
         }
     }
 }
