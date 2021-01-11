@@ -10,6 +10,7 @@ import org.hibernate.validator.internal.util.privilegedactions.GetMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import service.MyFileService;
 
 import javax.validation.Valid;
 import java.io.File;
@@ -22,6 +23,7 @@ public class FileController {
     @Autowired
     private CommonProperties commonProperties;
 
+    private final MyFileService myFileService;
     @Autowired
     private MyFileRepository myFileRepository;
 
@@ -38,11 +40,15 @@ public class FileController {
     @PostMapping(path = "/fromPath")
     public ResponseEntity<?> getFileFromPath(@Valid @RequestBody MyFile myFile){
 //        File dir = new File(myFile.getPath());
-        getChild(myFileRepository.save(new MyFile(myFile.getName(), myFile.getPath(), myFile.isFile(), myFile.getId())));
-        return ResponseEntity.ok().body(
-                ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
-                        .message(commonProperties.getMESSAGE_SUCCESS())
-                        .data(myFileRepository.findAll()).build());
+        try{
+          return myFileService.getFileFromPath(myFile);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(
+                    ApiResponse.builder()
+                            .code(commonProperties.getCODE_UNDEFINE_ERROR())
+                            .message(commonProperties.getMESSAGE_UNDEFINE_ERROR()).build()
+            );
+        }
     }
 
     @GetMapping()
@@ -51,19 +57,5 @@ public class FileController {
                 ApiResponse.builder().code(commonProperties.getCODE_SUCCESS())
                         .message(commonProperties.getMESSAGE_SUCCESS())
                         .data(myFileRepository.findAll()).build());
-    }
-
-    public void getChild(MyFile myFile) {
-        File dir = new File(myFile.getPath());
-        if (dir.isDirectory()) {
-            System.out.println("Folder: "+ dir.getPath());
-            if(dir.listFiles() != null) {
-                for (File listFile : dir.listFiles()) {
-                    getChild(myFileRepository.save(new MyFile(listFile.getName(), listFile.getPath(), listFile.isFile(), myFile.getId())));
-                }
-            }
-        }else{
-            System.out.println("File: "+ myFile.getPath());
-        }
     }
 }
