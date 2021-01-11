@@ -34,14 +34,17 @@ public class FileController {
                         .data(dir).build());
     }
 
-    private void getChild(File dir){
-        for(File file: dir.listFiles()) {
-            if (file.isFile()) {
-                MyFile myFile = new MyFile(file);
-                System.out.println(myFile.toString());
-            } else {
-                getChild(file);
+    public static void getChild(File dir) {
+
+        if (dir.isDirectory()) {
+            System.out.println("Folder: "+ dir.getPath());
+            if(dir.listFiles() != null) {
+                for (File listFile : dir.listFiles()) {
+                    getChild(listFile);
+                }
             }
+        }else{
+            System.out.println("File: "+ dir.getPath());
         }
     }
 }

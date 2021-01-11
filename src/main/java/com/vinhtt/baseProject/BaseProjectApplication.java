@@ -29,9 +29,6 @@ public class BaseProjectApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(BaseProjectApplication.class, args);
-//		FileRepository fileRepository = context.getBean(FileRepository.class);
-		CardRepository cardRepository = context.getBean(CardRepository.class);
-		cardRepository.save(new Card("Flutter- Getting Started", "Make by Jackie"));
 	}
 
 }
