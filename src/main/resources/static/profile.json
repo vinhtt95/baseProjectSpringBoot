@@ -1,0 +1,47 @@
+{
+  "status": 1,
+  "code": 200,
+  "message": "",
+  "data": [
+    {
+      "customer_id": 1,
+      "customer_name" : "thinh",
+      "email": [
+        {
+          "email_text" : "ltthinhtb@gmail.com",
+          "email_id" : 1
+        }
+      ],
+      "phone": [
+        {
+          "phone_text" : "ltthinhtb@gmail.com",
+          "phone_id" : 1
+        }
+      ],
+      "avatar": "https://reqres.in/img/faces/1-image.jpg",
+      "tags": [
+        {
+          "tag_id": 1,
+          "tag_show" : false,
+          "tag_title" : "Khách Hàng mới"
+        }
+      ],
+      "participant" : [
+        {
+          "participant_id" : 1,
+          "participant_name" : "thinh",
+          "support" : "false",
+          "participant_avatar" : "https://reqres.in/img/faces/1-image.jpg"
+        }
+      ],
+      "list_note": [
+        {
+          "note_title": "Các giải pháp khác từ Bizfly",
+          "note_id": 1,
+          "avatar": "https://github.com/flutter/flutter/issues/57399",
+          "note_time" : "2021-02-26 15:30:21.788736"
+        }
+      ]
+    }
+  ]
+}

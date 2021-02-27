@@ -1,0 +1,26 @@
+{
+  "status": 1,
+  "code": 200,
+  "message": "",
+  "data": {
+    "info": {
+      "page": 1,
+      "per_page": 6,
+      "total": 12,
+      "total_pages": 2
+    },
+    "data": [
+      {
+        "model_title": "Mẫu xin chào",
+        "model_id": 1,
+        "model_count" : 3,
+        "suggest_message" : [
+          {
+            "suggest_id" : 1,
+            "suggest_title" : "Chào bạn"
+          }
+        ]
+      }
+    ]
+  }
+}

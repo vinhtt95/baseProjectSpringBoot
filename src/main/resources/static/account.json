@@ -1,0 +1,31 @@
+{
+  "status": 1,
+  "code": 200,
+  "message": "",
+  "data": [
+    {
+      "user_id": 1,
+      "user_name" : "thinh",
+      "email": "Nhathoangvan@vccorp.vn",
+      "avatar": "https://reqres.in/img/faces/1-image.jpg",
+      "list_bot": [
+        {
+          "id": 1,
+          "project_name": "George",
+          "project_id": 4,
+          "bot_name": "Bluth",
+          "bot_id": 2,
+          "avatar": "https://reqres.in/img/faces/1-image.jpg",
+          "unseenCount": 0
+        }
+      ],
+      "list_policy": [
+        {
+          "policy_title": "Các giải pháp khác từ Bizfly",
+          "policy_id": 1,
+          "url": "https://github.com/flutter/flutter/issues/57399"
+        }
+      ]
+    }
+  ]
+}

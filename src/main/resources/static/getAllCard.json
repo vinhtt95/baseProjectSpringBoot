@@ -1,1 +1,12 @@
-{"status":1,"code":200,"message":"","data":[{"id":1,"title":"Flutter- Getting Started","description":""}]}
+{
+  "status": 1,
+  "code": 200,
+  "message": "",
+  "data": [
+    {
+      "id": 1,
+      "title": "Flutter- Getting Started",
+      "description": ""
+    }
+  ]
+}

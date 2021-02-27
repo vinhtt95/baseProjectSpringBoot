@@ -1,0 +1,24 @@
+{
+  "status": 1,
+  "code": 200,
+  "message": "",
+  "datas": {
+    "info": {
+      "page": 1,
+      "per_page": 6,
+      "total": 12,
+      "total_pages": 2
+    },
+    "data": [
+      {
+        "id": 1,
+        "project_name": "George",
+        "project_id" : 4,
+        "bot_name": "Bluth",
+        "bot_id" : 2,
+        "avatar": "https://reqres.in/img/faces/1-image.jpg",
+        "unseenCount" : 0
+      }
+    ]
+  }
+}
