@@ -74,6 +74,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/",
                         "/files",
                         "/files/*",
+                        "/bots",
+                        "/bots/*",
                         "/account",
                         "/account/*",
                         "/message",
