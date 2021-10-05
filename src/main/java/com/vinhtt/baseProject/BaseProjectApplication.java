@@ -1,8 +1,6 @@
 package com.vinhtt.baseProject;
 
 import com.vinhtt.baseProject.config.CommonProperties;
-import com.vinhtt.baseProject.model.Card;
-import com.vinhtt.baseProject.repository.CardRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;

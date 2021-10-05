@@ -72,19 +72,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/",
-                        "/files",
-                        "/files/*",
-                        "/bots",
-                        "/bots/*",
-                        "/account",
-                        "/account/*",
-                        "/message",
-                        "/message/*",
-                        "/files/sub_file/*",
-                        "/video",
-                        "/video/*",
-                        "/card",
-                        "/card/*",
                         "/favicon.ico",
                         "/**/*.png",
                         "/**/*.gif",
@@ -109,7 +96,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    public void configure(WebSecurity web) throws Exception {
+    public void configure(WebSecurity web){
         web.ignoring().antMatchers("/v2/api-docs",
                 "/configuration/ui",
                 "/swagger-resources/**",
