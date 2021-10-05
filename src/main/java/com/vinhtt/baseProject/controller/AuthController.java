@@ -4,13 +4,20 @@ import com.vinhtt.baseProject.exception.AppException;
 import com.vinhtt.baseProject.model.Role;
 import com.vinhtt.baseProject.model.RoleName;
 import com.vinhtt.baseProject.model.User;
-import com.vinhtt.baseProject.payload.ApiResponse;
+import com.vinhtt.baseProject.payload.Response;
 import com.vinhtt.baseProject.payload.JwtAuthenticationResponse;
 import com.vinhtt.baseProject.payload.LoginRequest;
 import com.vinhtt.baseProject.payload.SignUpRequest;
 import com.vinhtt.baseProject.repository.RoleRepository;
 import com.vinhtt.baseProject.repository.UserRepository;
 import com.vinhtt.baseProject.security.JwtTokenProvider;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,13 +37,9 @@ import java.net.URI;
 import java.util.Collections;
 
 import java.util.List;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import io.swagger.annotations.ApiResponses;
 
 @RestController
-@Api(value = "Authentication", description = "SignUp, SignIn")
+@Tag(name = "Authentication", description = "SignUp, SignIn")
 @RequestMapping("/api/auth")
 public class AuthController {
 
@@ -55,7 +58,14 @@ public class AuthController {
     @Autowired
     JwtTokenProvider tokenProvider;
 
-    @ApiOperation(value = "Sign In", response = List.class)
+    @Operation(description = "Sign In", responses = {
+            @ApiResponse(content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))), responseCode = "200") })
+    @ApiResponses(value = {
+            @ApiResponse(responseCode  = "200", description = "Thành công"),
+            @ApiResponse(responseCode  = "401", description = "Chưa xác thực"),
+            @ApiResponse(responseCode  = "403", description = "Truy cập bị cấm"),
+            @ApiResponse(responseCode  = "404", description = "Không tìm thấy")
+    })
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
@@ -72,16 +82,23 @@ public class AuthController {
         return ResponseEntity.ok(new JwtAuthenticationResponse(jwt));
     }
 
-    @ApiOperation(value = "Sign Up", response = List.class)
+    @Operation(description = "Sign Up", responses = {
+            @ApiResponse(content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))), responseCode = "200") })
+    @ApiResponses(value = {
+            @ApiResponse(responseCode  = "200", description = "Thành công"),
+            @ApiResponse(responseCode  = "401", description = "Chưa xác thực"),
+            @ApiResponse(responseCode  = "403", description = "Truy cập bị cấm"),
+            @ApiResponse(responseCode  = "404", description = "Không tìm thấy")
+    })
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignUpRequest signUpRequest) {
         if(userRepository.existsByUsername(signUpRequest.getUsername())) {
-            return new ResponseEntity(new ApiResponse(false, "Username is already taken!"),
+            return new ResponseEntity(new Response(false, "Username is already taken!"),
                     HttpStatus.BAD_REQUEST);
         }
 
         if(userRepository.existsByEmail(signUpRequest.getEmail())) {
-            return new ResponseEntity(new ApiResponse(false, "Email Address already in use!"),
+            return new ResponseEntity(new Response(false, "Email Address already in use!"),
                     HttpStatus.BAD_REQUEST);
         }
 
@@ -102,6 +119,6 @@ public class AuthController {
                 .fromCurrentContextPath().path("/api/users/{username}")
                 .buildAndExpand(result.getUsername()).toUri();
 
-        return ResponseEntity.created(location).body(new ApiResponse(true, "User registered successfully"));
+        return ResponseEntity.created(location).body(new Response(true, "User registered successfully"));
     }
 }
