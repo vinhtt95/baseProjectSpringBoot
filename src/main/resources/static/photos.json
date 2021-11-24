@@ -1,0 +1,24 @@
+{
+  "status": true,
+  "message": "Get list photo success.",
+  "data": [
+    {
+      "img": "assets/images/girls/img_1.jpeg",
+      "name": "Ayo",
+      "age": "20",
+      "likes": ["Dancing", "Cooking", "Art"]
+    },
+    {
+      "img": "assets/images/girls/img_2.jpeg",
+      "name": "Rondeau",
+      "age": "18",
+      "likes": ["Instagram", "Cooking"]
+    },
+    {
+      "img": "assets/images/girls/img_3.jpeg",
+      "name": "Valerie",
+      "age": "22",
+      "likes": ["Instagram", "Netflix", "Comedy"]
+    }
+  ]
+}
