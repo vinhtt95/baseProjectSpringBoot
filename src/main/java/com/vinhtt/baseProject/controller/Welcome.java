@@ -13,7 +13,7 @@ import java.util.*;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/")
+@RequestMapping("/check")
 public class Welcome {
 
     @Autowired

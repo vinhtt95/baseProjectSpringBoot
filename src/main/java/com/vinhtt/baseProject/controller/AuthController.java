@@ -1,5 +1,6 @@
 package com.vinhtt.baseProject.controller;
 
+import com.vinhtt.baseProject.config.CommonProperties;
 import com.vinhtt.baseProject.exception.AppException;
 import com.vinhtt.baseProject.model.Role;
 import com.vinhtt.baseProject.model.RoleName;
@@ -26,10 +27,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
@@ -59,7 +57,7 @@ public class AuthController {
     JwtTokenProvider tokenProvider;
 
     @Operation(description = "Sign In", responses = {
-            @ApiResponse(content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))), responseCode = "200") })
+            @ApiResponse(content = @Content(array = @ArraySchema(schema = @Schema(implementation = JwtAuthenticationResponse.class))), responseCode = "200") })
     @ApiResponses(value = {
             @ApiResponse(responseCode  = "200", description = "Thành công"),
             @ApiResponse(responseCode  = "401", description = "Chưa xác thực"),
